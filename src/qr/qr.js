@@ -1,3 +1,4 @@
+var QRCode = require('qrcode')
 var os = require('os');
 var ifaces = os.networkInterfaces();
 
@@ -25,4 +26,10 @@ exports.hostIP = () => {
         });
     });
     return ip;
+}
+ 
+exports.hostQR = async () => {
+    const qr = await QRCode.toDataURL('Hell', { type: 'png', ec_level: 'H', size: 10, margin: 0 });
+    console.log(qr);
+    return qr;
 }
