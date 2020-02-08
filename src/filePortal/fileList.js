@@ -1,3 +1,0 @@
-exports.fileList = () => {
-    return 'hi';
-}
