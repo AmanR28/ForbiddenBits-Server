@@ -1,12 +1,16 @@
-exports.fileList = async () => {
-  const mysql = require('mysql');
+const mysql = require('mysql');
 
-  const con = mysql.createConnection({
-      host: "localhost",  
-      user: "root",  
-      password: "password", 
-      database: "fb"
+function connect() {
+  return mysql.createConnection({
+    host: "localhost",  
+    user: "root",  
+    password: "password", 
+    database: "fb"
   });
+}
+
+exports.fileList = async () => {
+  const con = connect();
 
   return new Promise(resolve => {
     con.connect(function(err) {
