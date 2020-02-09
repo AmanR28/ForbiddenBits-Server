@@ -4,7 +4,8 @@ hostPort = 5000;
 hostURL = 'http://' + hostIP + ':' + hostPort;
 
 elements = {
-    main: document.getElementsByClassName('container')[0]
+    main: document.getElementsByClassName('container')[0],
+    form: document.getElementById('uploadForm')
 }
 
 fileList = hostURL + "/fileList";
@@ -63,3 +64,9 @@ fetch(fileList)
     console.log(elements.main);
     elements.main.innerHTML = result;
 });
+
+formURL = hostURL + "/upload";
+function load () {
+  elements.form.setAttribute('action', formURL);
+}
+load();
