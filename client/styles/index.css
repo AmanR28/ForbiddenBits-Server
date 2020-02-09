@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.body-background {
+    background-color: #B7A9A1;
+}
+
+.header {
+    background-color: rgba(12, 65, 14, 0.774);
+    padding: 30px;
+    text-align: center;
+    color: white;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    background-color: #333;
+}
+.navbar a {
+    color: white;
+    padding: 0px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+
+/* Main */
+.main {
+    display: flex;
+    height: auto;
+    width: 85%;
+    margin: 5px auto;
+    align-self: center;
+    flex-direction: column;
+    padding: 0px 5%;
+    background-color: rgb(14, 12, 12);
+}
+
+
+.file-container {
+    margin: 5px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.file-details {
+    border-radius: 20px;
+    padding: 10px;
+    background-color: rgb(36, 177, 18);
+    flex: 2;
+}
+
+.file-name {
+    padding-top: 3px;
+    height: 60%;
+}
+
+.footer {
+    background-color: rgba(85, 67, 67, 0.774);
+    color: white;
+    position: fixed;
+    bottom: 0em;
+    width: 100%;
+}
+
