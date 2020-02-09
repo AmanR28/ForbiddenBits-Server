@@ -1,3 +1,7 @@
 node_modules
-DB/8.iso
-DB/9.zip
+
+DB/*
+
+!DB/index.html
+!DB/initDB.js
+!DB/server.js
