@@ -1,0 +1,67 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.header {
+    background-color: aquamarine;
+    padding: 30px;
+    text-align: center;
+    color: white;
+    position: sticky;
+
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    background-color: #333;
+}
+.navbar a {
+    color: white;
+    padding: 0px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+
+/* Main */
+.main {
+    display: flex;
+    height: auto;
+    width: 80%;
+    margin: 5px auto;
+    align-self: center;
+    flex-direction: column;
+    padding: 0px 5%;
+}
+
+.file-container {
+    margin: 5px;
+    padding: 10px;
+    display: flex;
+}
+
+.file-details {
+    padding: 10px;
+    background-color: cadetblue;
+    flex: 2;
+}
+
+.file-name {
+    padding-top: 3px;
+    height: 60%;
+}
+
+.footer {
+    background-color: rgba(85, 67, 67, 0.774);
+    position: absolute;
+    bottom: 0em;
+    width: 100%;
+}

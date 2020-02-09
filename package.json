@@ -9,7 +9,8 @@
     "start:file": "node src/server.js",
     "init:db": "node src/init/db.js",
     "init:filedb": "node DB/initDB.js",
-    "clear:db": "node src/init/clear.js"
+    "clear:db": "node src/init/clear.js",
+    "start:main": "node main"
   },
   "repository": {
     "type": "git",

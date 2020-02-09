@@ -1,0 +1,95 @@
+
+body{
+    background-image: url('../assest/images/background.jfif');
+    background-size: cover;
+    
+}
+.header
+{
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 40px;
+    font-size: 50px;
+    position: sticky;
+    background-color: #313131;
+    color:#ffa64d;
+}
+.footer
+{
+    position: fixed;
+    bottom: 0px;
+    background-color: rgb(255, 123, 0);
+    width : 100%;
+    text-align: center;
+}
+.select
+{
+    position: fixed;
+    bottom: 20px;
+    margin-left: 65%;
+    opacity: 0.85;
+}
+.modal-title{
+    font-size: 30px;
+}
+.files{
+    padding:15px;
+}
+.custom
+{
+    background-color:lightgrey;
+}
+#submit-button
+{
+    margin-bottom:8px;
+    margin-top: 5px;
+}
+.card
+{
+    background-color: #ffa64d;
+    border: 8px;
+    border-radius: 3%;
+    border:solid white;
+    padding:7px ;
+    margin-top: 15px;
+}
+.modal-body{
+    background-color: black;
+    color: #ffa64d;
+}
+.modal-header{
+    background-color: black;
+    color: #ffa64d;
+}
+.modal-footer
+{
+    background-color: black;
+    color: #ffa64d;
+}
+.btn
+{
+    background-color: #ffa64d;
+}
+
+
+#delete-image
+{  
+    width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translate(-55%,55%);
+  z-index: 100;
+  border-radius: 20% ;
+}
+.download-button
+{
+    
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transform: translate(-30%,-20%);
+    z-index: 100;
+    border-radius: 20% ;
+}
