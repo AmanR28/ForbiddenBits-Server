@@ -19,8 +19,8 @@ app.get('/hostIP', (req, res) => {res.send(IP);});
 
 app.get('/hostQR', async (req, res) => {
   const qr = await hostQR();
-  // res.send(`<img src='${qr}'>`);
-  res.send(qr);
+  res.send(`<div style="margin: 100px;"><img src='${qr}' height="300px" width="300px"></div> <div style="margin-left:200px"><h3>${IP}:9020/</h3></div>`);
+  // res.send(qr);
 })
 
 

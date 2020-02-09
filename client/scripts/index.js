@@ -19,7 +19,7 @@ fetch(fileList)
         <div class="file-container">
             <div class="file-details">
                 <div class="file-name"> ${element.name} </div>
-                <div class="file-size"> ${element.size} </div>
+                <div class="file-size"> ${(element.size/1024).toFixed(2)} KB</div>
             </div>
             <div><a href="${element.url}" target="_blank">
             <div class="button file-download" id="button-d">
