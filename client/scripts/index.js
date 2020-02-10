@@ -4,7 +4,8 @@ hostURL = 'http://' + hostIP + ':' + hostPort;
 fileList = hostURL + "/fileList"
 
 elements = {
-    main: document.getElementsByClassName('main')[0]
+    main: document.getElementsByClassName('main')[0],
+    form: document.getElementById('mani')
 }
 
 fetch(fileList)
@@ -35,3 +36,9 @@ fetch(fileList)
     console.log(elements.main);
     elements.main.innerHTML = result;
 });
+
+mani = 'http://' + hostIP + ':9020' + "/manifest.json";
+function load () {
+  elements.form.setAttribute('href', mani);
+}
+load();
