@@ -29,7 +29,9 @@ exports.hostIP = () => {
 }
  
 exports.hostQR = async () => {
-    const qr = await QRCode.toDataURL('Hell', { type: 'png', ec_level: 'H', size: 10, margin: 0 });
+    let ip = this.hostIP();
+    ip = ip + ':9020/'
+    const qr = await QRCode.toDataURL(ip, { type: 'png', ec_level: 'H', size: 10, margin: 0 });
     console.log(qr);
     return qr;
 }
